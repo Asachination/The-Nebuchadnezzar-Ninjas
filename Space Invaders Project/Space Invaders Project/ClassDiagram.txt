@@ -9,7 +9,7 @@ double XVelocity
 class aliens
 {
 
-string state(colour change)
+enum state(colour change) {weakened, normal}
 double XVelocity
 enum boostes
 
@@ -22,14 +22,15 @@ enum Boosters
 double XVelocity
 double YVelocity
 string state
-
+ public void Attack()
+{
 
 }
 
 Methods: Dispatcher timer:
          Detection
          Movement of images
-         Update screen: lives,score
+         Update screen: lives,score,state
 
 Implement:
 events,classes,files,timers,enumerators,generic
